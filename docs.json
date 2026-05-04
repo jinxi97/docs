@@ -22,12 +22,6 @@
         "pages": [
           "define-agent/agent-setup"
         ]
-      },
-      {
-        "group": "Configure agent workspace",
-        "pages": [
-          "configure-workspace/workspace-setup"
-        ]
       }
     ]
   },
