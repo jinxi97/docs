@@ -7,7 +7,6 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
   "navigation": {
     "groups": [
       {
@@ -34,7 +33,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@funky.dev"
       }
     ],
     "primary": {
