@@ -11,38 +11,22 @@
   "navigation": {
     "groups": [
       {
-        "group": "Getting started",
+        "group": "First steps",
         "pages": [
           "index",
           "quickstart"
         ]
       },
       {
-        "group": "Customization",
+        "group": "Define your sub-agent",
         "pages": [
-          "essentials/settings",
-          "essentials/navigation"
+          "define-agent/overview"
         ]
       },
       {
-        "group": "Writing content",
+        "group": "Configure agent workspace",
         "pages": [
-          "essentials/markdown",
-          "essentials/code",
-          "essentials/images",
-          "essentials/components",
-          "essentials/reusable-snippets"
-        ]
-      },
-      {
-        "group": "Agent ready",
-        "pages": [
-          "agent-ready/prompt",
-          "agent-ready/visibility",
-          "agent-ready/contextual",
-          "ai-tools/cursor",
-          "ai-tools/claude-code",
-          "ai-tools/windsurf"
+          "configure-workspace/overview"
         ]
       }
     ]
