@@ -26,6 +26,7 @@ Save the following as `main.py`:
 import os
 from funky import Funky
 
+client = Funky(api_key=os.getenv("FUNKY_API_KEY"))
 sub_agent = client.create_subagent(model="gemini-3-flash-preview")
 try:
     messages = sub_agent.send_message("What is best restaurant in SF?")
