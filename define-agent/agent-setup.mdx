@@ -9,17 +9,19 @@ Every sub-agent is configured with a **model** and a **system prompt**. Pass the
 
 Choose the model that powers your sub-agent. Pass the model ID via the `model` parameter.
 
-| Provider  | Model              | Model ID                  |
-| --------- | ------------------ | ------------------------- |
-| Google    | Gemini 3.1 Pro     | `gemini-3.1-pro`          |
-| Google    | Gemini 3 Flash     | `gemini-3-flash`          |
-| Google    | Gemini 3 Flash Lite| `gemini-3-flash-lite`     |
-| Anthropic | Claude Sonnet 4.6  | `claude-sonnet-4-6`       |
-| Anthropic | Claude Opus 4.7    | `claude-opus-4-7`         |
-| OpenAI    | GPT-5.5            | `gpt-5.5`                 |
+| Provider  | Model                   | Model ID                       |
+| --------- | ----------------------- | ------------------------------ |
+| Google    | Gemini 3.1 Pro Preview  | `gemini-3.1-pro-preview`       |
+| Google    | Gemini 3 Flash Preview  | `gemini-3-flash-preview`       |
+| Google    | Gemini 3.1 Flash Lite   | `gemini-3.1-flash-lite`        |
+| Anthropic | Claude Opus 4.7         | `claude-opus-4-7`              |
+| Anthropic | Claude Sonnet 4.6       | `claude-sonnet-4-6`            |
+| Anthropic | Claude Haiku 4.5        | `claude-haiku-4-5-20251001`    |
+| OpenAI    | GPT-5.5                 | `gpt-5.5`                      |
+| OpenAI    | GPT-5.4 Mini            | `gpt-5.4-mini`                 |
 
 ```python
-sub_agent = client.create_subagent(model="claude-opus-4-7")
+sub_agent = client.create_subagent(model="gemini-3-flash-preview")
 ```
 
 ## System prompt
@@ -28,7 +30,7 @@ Set a system prompt to shape how your sub-agent behaves — its role, tone, cons
 
 ```python
 sub_agent = client.create_subagent(
-    model="claude-opus-4-7",
+    model="gemini-3-flash-preview",
     system_prompt="You are a senior code reviewer. Respond only with structured JSON findings.",
 )
 ```
